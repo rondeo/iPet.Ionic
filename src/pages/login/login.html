@@ -1,0 +1,40 @@
+<ion-content padding class="backImage">
+
+    <div class="logo">
+        <img src="/assets/imagens/icon-iPet.png" alt="">
+        <span >iPet</span>
+    </div>
+    
+    <ion-list no-lines class="list-transparent">
+      <ion-item>
+        <ion-item>
+          <ion-input [(ngModel)]="form.email" type="text" placeholder="E-mail" ></ion-input>      
+        </ion-item>   
+        <ion-item>
+            <ion-input [(ngModel)]="form.senha" type="password" placeholder="Senha" ></ion-input>
+          </ion-item>
+      </ion-item>
+    </ion-list>
+    
+    <ion-grid>
+      <ion-row>
+          <button ion-button color="secondary" round block (click)="login()">
+              Efetuar Login
+            </button>
+      </ion-row>
+      <ion-row>
+          <button ion-button block round color="secondary" outline (click)="cadastrar()">
+              Cadastrar-se
+            </button>
+      </ion-row>
+    </ion-grid>
+      
+    <ion-grid>
+      <ion-row>
+          <button ion-button block clear color="light" >
+              Administrar Cadastros
+          </button>    
+      </ion-row>
+    </ion-grid>
+  
+</ion-content>

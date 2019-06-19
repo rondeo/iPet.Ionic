@@ -1,0 +1,14 @@
+{
+  "name": "iPet.Ionic",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  },
+  "proxies": [
+    {
+      "path": "/v1",
+      "proxyUrl": "http://localhost:3001/api/"
+    }
+  ]
+}
